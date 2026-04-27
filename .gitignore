@@ -1,0 +1,10 @@
+﻿# Local evidence output
+ssh-evidence/
+Evidence/
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
