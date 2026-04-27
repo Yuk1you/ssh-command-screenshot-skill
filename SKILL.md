@@ -1,6 +1,8 @@
-﻿---
+---
 name: ssh-command-screenshot
 description: Run SSH commands in Windows Terminal and capture per-command screenshot evidence into a new folder. Use when Codex must perform command-line evidence collection, security baseline checks, incident-response verification, or audit screenshots over SSH on Windows without modifying Excel or other report files.
+version: 1.0
+author: Yuki
 ---
 
 # SSH Command Screenshot
