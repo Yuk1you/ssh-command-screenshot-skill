@@ -6,8 +6,6 @@
 
 `ssh-command-screenshot` is a Codex skill for running SSH commands in Windows Terminal and capturing screenshot evidence for each command. It is designed for audit evidence collection, security baseline checks, incident-response verification, and other command-line proof workflows.
 
-This skill **does not edit Excel, Word, or report files**. It only performs command execution, screenshots, and evidence export.
-
 ### What It Does
 
 - Opens Windows Terminal on the local Windows machine.
@@ -107,8 +105,6 @@ powershell -ExecutionPolicy Bypass -File D:\WorkSpace\Skill\ssh-command-screensh
 ### 概述
 
 `ssh-command-screenshot` 是一个 Codex Skill，用于在本机 Windows Terminal 中通过 SSH 执行远程命令，并对每条命令的执行结果进行截图取证。适用于安全基线检查、审计留痕、应急响应核查、远程命令执行证明等场景。
-
-该 Skill **不处理 Excel、Word 或报告文件**，只负责命令执行、截图和证据导出。
 
 ### 功能
 
