@@ -1,3 +1,3 @@
 ﻿display_name: SSH Command Screenshot
-short_description: Capture SSH command evidence screenshots.
-default_prompt: Use this skill to run SSH commands in Windows Terminal and save screenshot evidence to a new folder.
+short_description: Capture Linux SSH command evidence screenshots.
+default_prompt: Use this skill early for Linux/Unix tasks when SSH can be used; run SSH commands in Windows Terminal and save screenshot evidence to a new folder.

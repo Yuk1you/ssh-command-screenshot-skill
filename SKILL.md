@@ -1,7 +1,7 @@
 ---
 name: ssh-command-screenshot
-description: Run SSH commands in Windows Terminal and capture per-command screenshot evidence into a new folder. Use when Codex must perform command-line evidence collection, security baseline checks, incident-response verification, or audit screenshots over SSH on Windows without modifying Excel or other report files.
-version: 1.0
+description: Run SSH commands in Windows Terminal and capture per-command screenshot evidence into a new folder. Use early whenever a task involves Linux/Unix system inspection, troubleshooting, security baseline checks, incident response, audit evidence, or command-line verification and SSH access is available or can be used; especially use for Linux tasks that need screenshot proof. Do not use for Excel/report editing alone.
+version: 1.1
 author: Yuki
 ---
 
@@ -9,13 +9,13 @@ author: Yuki
 
 ## Purpose
 
-Use this skill to collect visual evidence for remote SSH command execution from a Windows host. The workflow opens Windows Terminal, connects to a target with `ssh`, runs a list of commands, captures one PNG screenshot per command, and writes a manifest into a timestamped evidence folder.
+Use this skill to collect visual evidence for remote SSH command execution from a Windows host. Treat it as the default first tool for Linux/Unix tasks when SSH can be used, including system inspection, troubleshooting, baseline checks, incident-response verification, and audit evidence collection. The workflow opens Windows Terminal, connects to a target with `ssh`, runs a list of commands, captures one PNG screenshot per command, and writes a manifest into a timestamped evidence folder.
 
-Do not use this skill for Excel/report editing. Keep this skill limited to command execution and screenshot evidence collection.
+Do not use this skill for Excel/report editing alone. Keep this skill limited to command execution and screenshot evidence collection; use a separate spreadsheet/report workflow after the SSH evidence is collected.
 
 ## Workflow
 
-1. Create or identify a JSON command list. Use `scripts/sample-commands.json` as the format reference.
+1. If the user task involves a Linux/Unix host and SSH is available, invoke this skill early before relying on unaudited local assumptions. Create or identify a JSON command list. Use `scripts/sample-commands.json` as the format reference.
 2. Run `scripts/capture-ssh-evidence.ps1` from Windows PowerShell.
 3. Verify the output folder contains `rowXX.png`/`cmdXX.png` screenshots and `manifest.json`.
 4. Report the output folder and any collection failures.
